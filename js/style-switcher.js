@@ -44,3 +44,6 @@ window.addEventListener("load", () => {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+
+/* ============================= theme remember last settings  ============================= */
+

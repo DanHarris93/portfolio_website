@@ -49,7 +49,6 @@
                             <h3 class="hello">Hello, my name is <span class="name">Daniel Harris</span></h3>
                             <h3 class="my-profession">I'm a <span class="typing">Junior Software Developer</span></h3>
                             <p>I'm a recent graduate of University of Massachusetts Global's Software Engineering Bootcamp with foundational knowledge of JavaScript, CSS, HTML, and Python languages.</p>
-                            <!--<a href="Dan H Resume IT_Coding 2024.docx.pdf" class="btn" download>Download Resume</a>-->
                             <a href="Dan H Resume IT_Coding 2024.docx.pdf" download class="btn">Download Resume</a>
                         </div>
                         <div class="home-img padd-15">
@@ -417,38 +416,41 @@
                     <!-- ===== Contact Form =====-->
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <div class="row">
+                                    <input type="hidden" name="access_key" value="2aaf2de7-3e8c-48dd-bd94-6e879dad80cc">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="" placeholder="Your Message" required></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn">Send Message</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -480,5 +482,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
