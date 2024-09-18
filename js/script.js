@@ -6,6 +6,9 @@ var typed = new Typed(".typing",{
     loop:true
 })
 
+/* ======================= Clear Form? ======================= */
+
+
 /* ======================= Aside ======================= */
 const nav = document.querySelector(".nav"),
     navList = nav.querySelectorAll("li"),
